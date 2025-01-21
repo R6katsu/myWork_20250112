@@ -1,0 +1,6 @@
+/* 文字の下に・・・を配置する */
+.main_content_area {
+    border-bottom: 4px dotted black; /* 色に変更 */
+    margin-bottom: 32px;
+    padding: 4px 0 4px 8px;
+}

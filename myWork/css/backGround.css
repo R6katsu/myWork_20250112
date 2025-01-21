@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 背景のレイアウトを設定 */
+
+/* 画面全体 */
+body {
+    margin: 0 10%; /* 上下、左右の順番で外側の余白を設定 */
+    padding: 0 5%; /* 上下、左右の順番で内側の余白を設定 */
+    background: url('../src/image/フリーテクスチャ素材館様_壁紙クロス01・フリーテクスチャ（CG）.jpg') center repeat; /* 背景画像を中央に配置し、カバーするように表示 */
+    background-size: 50%; /* 画像のサイズ */
+    color: black; /* 文字の色を白に設定 */
+}
+
+/* 
+    コンテンツのラッパー。
+    おそらく、画像とか様々な要素の背景色などのこと。
+*/
+#wrapper {
+    padding: 20px; /* wrapperの余白 */
+    background-color: gray; /* 要素の背景色 */
+    width: 100%; /* wrapperの幅を画面全体に広げる */
+    box-sizing: border-box; /* wrapperのサイズ計算方法を変更。padding、borderを含めて要素の総幅を計算するため、外側のサイズに影響を与えない。 */
+}
+
+/* HTML全体 */
+html {
+    background-color: gray; /* これが余白の色 */
+    background-image: url('../src/image/Bg-Patterns様_追加パターン素材390(寄木).jpg'); /* 余白部分に背景画像 */
+    background-repeat: repeat; /* 背景画像を繰り返して表示 */
+    background-size: auto; /* 画像のサイズはそのまま（繰り返しのために変更しない） */
+    background-position: center center; /* 背景画像を中央に配置 */ /* 繰り返しの起点を中心にすることで左右対称にする */
+    background-attachment: fixed; /* 背景画像を固定する（スクロールしても背景は動かない） */
+}

@@ -1,0 +1,19 @@
+/* メッセージウィンドウ */
+.main_content_greet {
+    width: 100%; /* コンテンツに応じた幅 */
+    font-size: 14px;
+    padding: 10px 0; /* 上下、左右の順番で内側の余白を設定 */
+    border-radius: 8px;
+    background-color: #f0eaf1;
+    /* background-imageの内容はコピペ。斜線を作っている？ */
+    background-image: -webkit-gradient( linear, 0 0, 100% 100%, color-stop(0.25, #fefefe), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #fefefe), color-stop(0.75, #fefefe), color-stop(0.75, transparent), to(transparent) );
+    -webkit-background-size: 7px 7px; /* 斜線の大きさが変わっている？ */
+    box-shadow: 1px 1px gray; /* 影を付ける。色を灰色に設定 */
+    text-anchor: start;
+}
+
+    /* メッセージウィンドウの文字の色 */
+    .main_content_greet .main-content-greet__line 
+    {
+        color: black;
+    }
