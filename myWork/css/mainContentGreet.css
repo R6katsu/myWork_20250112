@@ -17,3 +17,17 @@
     {
         color: black;
     }
+
+.container {
+    display: flex;
+    align-items: stretch; /* 垂直方向中央揃え */
+    gap: 20px; /* 余白 */
+}
+
+iframe {
+    flex-shrink: 0; /* 動画サイズを固定 */
+}
+
+.main_content_greet {
+    flex-grow: 1; /* 説明文を広げる */
+}
