@@ -9,6 +9,7 @@ body {
     background: url('../src/image/フリーテクスチャ素材館様_壁紙クロス01・フリーテクスチャ（CG）.jpg') center repeat; /* 背景画像を中央に配置し、カバーするように表示 */
     background-size: 50%; /* 画像のサイズ */
     color: black; /* 文字の色を白に設定 */
+    padding-top: 90px; /* ヘッダーの高さ分だけコンテンツを下げる */
 }
 
 /* 
@@ -30,4 +31,9 @@ html {
     background-size: auto; /* 画像のサイズはそのまま（繰り返しのために変更しない） */
     background-position: center center; /* 背景画像を中央に配置 */ /* 繰り返しの起点を中心にすることで左右対称にする */
     background-attachment: fixed; /* 背景画像を固定する（スクロールしても背景は動かない） */
+    position: absolute;
+    top: 0; /* topのオフセットをゼロに設定 */
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

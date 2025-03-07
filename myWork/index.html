@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 検索エンジンのロボットに、検索結果に表示しないように指示する -->
+    <meta name="robots" content="noindex">
+
+    <title>ピックアップ</title>
+
+    <!--
+        href="..."：		リンクする外部リソース（この場合は CSS ファイル）のパスを指定する。
+        css/style.css：		相対パスで指定する。
+        rel="stylesheet"：	スタイルシートであることを示す。ブラウザはこれに従ってCSSを適用する。
+        type="text/css"：	リンクするリソースの MIME タイプを指定する。
+    -->
+    <link href="css/mainContentArea.css" rel="stylesheet" type="text/css">
+    <link href="css/mainContentGreet.css" rel="stylesheet" type="text/css">
+    <link href="css/backGround.css" rel="stylesheet" type="text/css">
+
+    <!-- ボタンの見た目 -->
+    <style>
+        .button {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="fixedHeader.js"></script>
+    <script src="videoContainer.js"></script>
+
+    <div id='videoArea'></div>
+
+    <script>
+        const links =
+            [
+                { href: "https://github.com/R6katsu/ECS_Danmaku", text: "提出作品のソースコード" },
+                { href: "https://github.com/R6katsu/myWork_20250112", text: "こちらのウェブサイトのソースコード" }
+            ];
+
+        const videoContainer1 =
+        {
+            url: "https://www.youtube.com/embed/xnouCIFwwq8",
+            title: "ColorPuffer",
+            summary: "<b>2025/1/24に制作を開始し、2025/1/26に完成した作品。</b><br>GGJ25で制作した作品。お題は「泡」。プランナー1人、プログラマーは自分含めて2人、計3人のチームで48時間で完成させた。"
+        };
+
+        const videoContainer2 =
+        {
+            url: "https://www.youtube.com/embed/SBQBJGjWC-M",
+            title: "Unity ECSで作る弾幕ゲーム",
+            summary: "<b>2024/10/03に制作を開始し、2024/12/19に完成した作品。</b>この作品の制作を通じて、Unity ECS（1.2.4以降のEntity Component System）を扱う基礎が身についた。"
+        };
+
+        const videoContainer3 =
+        {
+            url: "https://www.youtube.com/embed/PnNeRrajcfE",
+            title: "PLANET SEARCHERS",
+            summary: "<b>2023/07/20に制作を開始し、2024/03/15に完成した作品。</b><br>初めてのアジャイル開発で取り組んだ作品。私はロープAssetを使用したロープアクション、プレイヤー操作、UI制作を中心に担当しました。DA-TE APPs! 2024というゲームコンテストに3人グループで参加し、最優秀賞に選ばれました。"
+        };
+
+        // ページ読み込み後に実行
+        window.onload = () => {
+            createFixedHeader("専門学校デジタルアーツ仙台<br>勝又 柊介（カツマタ シュウスケ）", links, 90);
+
+            addVideoAndSummaryContainer(videoContainer1.url, videoContainer1.title, videoContainer1.summary);
+            addVideoAndSummaryContainer(videoContainer2.url, videoContainer2.title, videoContainer2.summary);
+            addVideoAndSummaryContainer(videoContainer3.url, videoContainer3.title, videoContainer3.summary);
+        };
+    </script>
+</body>
+</html>

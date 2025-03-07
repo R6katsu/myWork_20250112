@@ -1,1 +1,11 @@
+// ローカルホスト
 php -S localhost:8000
+
+// 下のコピペ + フォルダの位置を記載したもの
+D:\MyFolder\ngrok-v3-stable\ngrok-v3-stable-windows-amd64\ngrok.exe http 8000
+
+// コピペしたもの
+ngrok http --url=parrot-exciting-jawfish.ngrok-free.app 8000
+
+// 静的
+D:\MyFolder\ngrok-v3-stable\ngrok http --url=parrot-exciting-jawfish.ngrok-free.app 8000
